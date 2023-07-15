@@ -14,13 +14,6 @@ from sqlalchemy.ext.asyncio import create_async_engine
 from flask import Flask,request, jsonify
 
 
-# Create a connection to the PostgreSQL database
-
-
-engine = create_engine('postgresql://postgres:Rajan81@localhost:5432/EV_DB')
-
-# engine = create_engine('postgresql://postgres:yWarBFw-sA@Kx@7@localhost:5432/EV_DB')
-connection = engine.connect()
 
 
 app = Flask(__name__)
