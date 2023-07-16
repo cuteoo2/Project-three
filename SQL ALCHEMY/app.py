@@ -30,22 +30,24 @@ def welcome():
 @app.route('/api/data', methods=['GET'])
 def get_data():
    
-    with open("EVcharge.csv") as csv_file_handler:
-        csv_reader = csv.DictReader(csv_file_handler)
-        #convert each row into a dictionary
-        #and add the converted data to the data_variable
-        data_dict = {}
+    # with open("EVcharge.csv") as csv_file_handler:
+    #     csv_reader = csv.DictReader(csv_file_handler)
+    #     #convert each row into a dictionary
+    #     #and add the converted data to the data_variable
+    #     data_dict = {}
 
-        for rows in csv_reader:
-            # print(rows)
+    #     for rows in csv_reader:
+    #         # print(rows)
 
-            #assuming a column named 'No'1
-            #to be the primary key
-            StationName = rows["StationName"]
-            data_dict[StationName] = rows
+    #         #assuming a column named 'No'1
+    #         #to be the primary key
+    #         StationName = rows["StationName"]
+    #         data_dict[StationName] = rows
  
  
-    return jsonify(data_dict )
+    # return jsonify(data_dict )
+    return send_file ('output.json')
+
 
 
 if __name__ == "__main__":
