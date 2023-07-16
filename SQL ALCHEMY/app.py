@@ -46,7 +46,10 @@ def get_data():
  
  
     # return jsonify(data_dict )
-    return send_file ('output.json')
+    response = send_file ('output.json')
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    return response
+    
 
 
 
