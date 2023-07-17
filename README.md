@@ -2,6 +2,7 @@
 EV (Electric Vehicle) charging station  in Palo Alto
  This analysis aims to provide valuable insights into the utilization patterns of EV charging infrastructure, as well as conduct a side analysis of the market share of electric vehicles.
  
+ 
 Objective:
 The primary objectives of this analysis are as follows:
 Analyze EV charging station locations on the Map,
