@@ -10,6 +10,7 @@ Assess the market share of electric vehicles in Palo Alto and compare it with th
 
 Methodology:
 
+
 Data Collection:
 Obtain relevant EV charging station usage data from the provided CSV file.
 Collect market share data of electric vehicles from reputable sources and industry reports.
